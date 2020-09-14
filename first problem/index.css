@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+  background-color: black;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1; 
+ }
+
+ #mydiv {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background:transparent;
+  margin-top: 30px;
+  margin-left: 20px;         
+}
+
+/* zoom out animation */
+iframe:hover{
+    -ms-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95); 
+}  
+
+/* fade animation */
+
+ iframe {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  /* blink animation */
+
+    iframe{
+    font-size: 25px;
+    font-family: cursive;
+    color: white;
+    animation: iframe 2s linear 10s;
+}
+    @keyframes iframe{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+   }
+
+/* mobile responsive */
+@media screen and (max-width: 767px) {
+    iframe {
+    display: block;
+    background-color: black;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    animation: none;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    iframe {
+    display: block;
+    background-color: black;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    animation: none;
+    }
+} 

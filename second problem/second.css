@@ -1,0 +1,196 @@
+body{
+  margin: 0;
+  width: 100%;
+}
+
+iframe {
+  display: block;
+  background-color: black;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  }
+  
+#leave {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+  } 
+#menu {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 9;
+  cursor: pointer;
+  }
+.popup-menu {
+  padding-top: 2.5%; 
+  padding-left: 5%; 
+  position: relative;
+}
+#text{
+  position: absolute;
+  background-color: black;
+  width: 25%;
+  height: 15%;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  }
+
+ button{
+    background-color: black;
+    color: white;
+  }
+#h4Error {
+    padding-top: 3%;
+    font-size: 30%;
+    text-align: center;
+    margin: 0%;
+  }
+#pError {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 20%;
+    text-align: center;
+    margin: 0%;
+  }
+
+#ok{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size: 20%;
+ }
+
+ /* mobile responsive */
+@media screen and (max-width: 767px) {
+  iframe {
+  display: block;
+  background-color: black;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  animation: none;
+  }
+  
+  #text{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    margin: auto;
+    z-index: -1;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  .popup-menu {
+    z-index: 9;
+    padding-top: 2.5%; 
+    padding-left: 5%; 
+    position: relative;
+  }
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 95%;
+    height: 95%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    }
+    
+  #leave {
+    position: fixed;
+    display: none;
+    width: 95%;
+    height: 95%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    } 
+  #menu {
+    position: fixed;
+    display: none;
+    width: 95%;
+    height: 95%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9;
+    cursor: pointer;
+  }
+  #h4Error {
+    padding-top: 3%;
+    font-size: 30%;
+    text-align: center;
+    margin-top: 10%;
+  }
+  #h4Error {
+    padding-top: 3%;
+    font-size: 30%;
+    text-align: center;
+    margin-top: 15%;
+  }
+ 
+}
+
+@media screen and (max-width: 1024px) {
+  iframe {
+  display: block;
+  background-color: black;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+  animation: none;
+  }
+} 

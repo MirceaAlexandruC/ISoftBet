@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Second problem solved</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="second.css">
+</head>
+<body>
+
+
+<iframe src="https://game-launcher-lux.isoftbet.com/255/200293?lang=en&cur=EUR&mode=0&background=1"></iframe> 
+
+<div id="overlay" onclick="offError()">
+  <div id="text"><h4 id="h4Error">Error</h4><p id="pError">Error text</p><button id="ok" onclick="ok()">Ok</button></div>
+</div>
+
+<div id="leave" onclick="offLeave()">
+    <div id="text"><h4 id="h4Error">Leave</h4><p id="pError">Error text</p><button id="ok" onclick="ok()">Ok</button></div>
+</div>
+
+<div id="menu" onclick="offMenu()">
+  <div id="text"><h4 id="h4Error">Menu</h4><p id="pError">Error text</p><button id="ok" onclick="ok()">Ok</button></div>
+</div>
+
+<div class="popup-menu" >
+    <span><button onclick="onError()">error popop</button></span>
+    <span><button onclick="onLeave()">leave game popup</button></span>
+    <span><button onclick="onMenu()">menu popup</button></span>
+</div>
+
+<script>
+function onError() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function offError() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+function onLeave() {
+  document.getElementById("leave").style.display = "block";
+}
+
+function offLeave() {
+  document.getElementById("leave").style.display = "none";
+}
+
+function onMenu() {
+  document.getElementById("menu").style.display = "block";
+}
+
+function offMenu() {
+  document.getElementById("menu").style.display = "none";
+}
+</script>
+</body>
+</html> 
+ 
