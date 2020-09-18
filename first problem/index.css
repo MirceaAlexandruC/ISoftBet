@@ -18,10 +18,12 @@ iframe {
  #mydiv {
   position: absolute;
   z-index: 9;
-  text-align: center;
 }
 
 #mydivheader {
+  position: relative;
+  width: auto;
+  height: auto;
   padding: 10px;
   cursor: move;
   z-index: 10;

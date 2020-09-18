@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Second problem solved</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="second.css">
 </head>
 <body>
@@ -10,7 +10,7 @@
 
 <iframe src="https://game-launcher-lux.isoftbet.com/255/200293?lang=en&cur=EUR&mode=0&background=1"></iframe> 
 
-<div id="overlay" onclick="offError()">
+<div id="error" onclick="offError()">
   <div id="text"><h4 id="h4Error">Error</h4><p id="pError">Error text</p><button id="ok" onclick="ok()">Ok</button></div>
 </div>
 
@@ -28,31 +28,7 @@
     <span><button onclick="onMenu()">menu popup</button></span>
 </div>
 
-<script>
-function onError() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function offError() {
-  document.getElementById("overlay").style.display = "none";
-}
-
-function onLeave() {
-  document.getElementById("leave").style.display = "block";
-}
-
-function offLeave() {
-  document.getElementById("leave").style.display = "none";
-}
-
-function onMenu() {
-  document.getElementById("menu").style.display = "block";
-}
-
-function offMenu() {
-  document.getElementById("menu").style.display = "none";
-}
-</script>
+<script src="./second.js" ></script>
 </body>
 </html> 
  

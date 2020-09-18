@@ -15,7 +15,7 @@ iframe {
   z-index: -2;
 }
 
-#overlay {
+#error {
   position: fixed;
   display: none;
   width: 100%;
@@ -58,7 +58,7 @@ iframe {
 .popup-menu {
   padding-top: 2.5%; 
   padding-left: 5%; 
-  position: relative;
+  position: fixed;
 }
 #text{
   position: absolute;
@@ -127,9 +127,9 @@ iframe {
     z-index: 9;
     padding-top: 2.5%; 
     padding-left: 5%; 
-    position: relative;
+    position: fixed;
   }
-  #overlay {
+  #error {
     position: fixed;
     display: none;
     width: 95%;
